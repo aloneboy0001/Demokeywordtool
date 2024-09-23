@@ -41,8 +41,14 @@ if st.button("Fetch Data"):
             # Promotional section
             st.markdown("### Want more keyword metrics with AI analysis?")
             st.markdown("Buy our **Premium Keyword Bomber Tool** for advanced features!")
-            if st.button("Get the Premium"):
-                # Redirect to Google website using the Streamlit function
-                st.write('<script>window.open("https://www.google.com", "_blank");</script>', unsafe_allow_html=True)
+            
+            # Use an anchor tag inside a button for the redirect
+            st.markdown("""
+                <a href="https://www.google.com" target="_blank">
+                    <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                        Get the Premium
+                    </button>
+                </a>
+            """, unsafe_allow_html=True)
         else:
-            st.error("Failed to fetch data")  # Fixed the unterminated string error
+            st.error("Failed to fetch data")
