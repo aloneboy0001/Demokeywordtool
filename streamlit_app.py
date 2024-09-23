@@ -44,7 +44,7 @@ if st.button("Fetch Data"):
             
             # Use an anchor tag inside a button for the redirect
             st.markdown("""
-                <a href="https://www.google.com" target="_blank">
+                <a href="https://chatgptengineer.gumroad.com/l/qkvax" target="_blank">
                     <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
                         Get the Premium
                     </button>
